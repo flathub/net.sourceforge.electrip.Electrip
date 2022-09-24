@@ -13,7 +13,19 @@
         "--device=all"
     ],
     "modules": [
-        "shared-modules/pygame/pygame-1.9.4.json",
+        {
+            "name": "portmidi",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/PortMidi/portmidi.git",
+                    "tag": "v2.0.3",
+                    "commit": "6a97d1eb3af062f3b2f2fabc196a5f66efb7a6c5"
+                }
+            ]
+        },
+        "python3-requirements.json",
         {
             "name": "electrip",
             "sources": [
@@ -22,6 +34,10 @@
                     "url": "git://git.code.sf.net/p/electrip/git",
                     "tag": "5.6",
                     "commit": "4b2901d1b12cf771b810f1471a2bed7684b90d63"
+                },
+                {
+                    "type": "patch",
+                    "path": "pygame-build.patch"
                 }
             ],
             "buildsystem": "simple",
