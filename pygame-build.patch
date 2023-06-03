@@ -1,0 +1,22 @@
+From 152ecffbcdf53036b02b389750f34c27bdb70277 Mon Sep 17 00:00:00 2001
+From: bbhtt <62639087+bbhtt@users.noreply.github.com>
+Date: Sat, 24 Sep 2022 18:27:25 +0530
+Subject: [PATCH] Allow building with pygame>=1.9.4
+
+---
+ src/setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/setup.py b/src/setup.py
+index 27f0254..93cdae5 100644
+--- a/src/setup.py
++++ b/src/setup.py
+@@ -25,4 +25,4 @@ setup(name='Electrip',
+                                  'icons/reload_graph.png',
+                                  'icons/sound_segment_bar_handle.png',
+                                  'css/*.css']},
+-      install_requires=['pycairo', 'PyGObject', 'Pygame==1.9.4'])
++      install_requires=['pycairo', 'PyGObject', 'Pygame>=1.9.4'])
+-- 
+2.37.3
+
