@@ -31,7 +31,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://git.code.sf.net/p/electrip/git",
+                    "url": "https://git.code.sf.net/p/electrip/git",
                     "tag": "5.6",
                     "commit": "4b2901d1b12cf771b810f1471a2bed7684b90d63"
                 },
